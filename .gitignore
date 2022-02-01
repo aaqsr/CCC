@@ -31,8 +31,9 @@
 *.out
 *.app
 
-# vs files
+# visual studio files
 
 .vscode/tasks.json
 .vscode/launch.json
 .vs
+*.dSYM
