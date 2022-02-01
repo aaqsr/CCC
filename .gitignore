@@ -30,6 +30,9 @@
 *.exe
 *.out
 *.app
-2018 S1.py
+
+# vs files
+
 .vscode/tasks.json
 .vscode/launch.json
+.vs
