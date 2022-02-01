@@ -1,4 +1,4 @@
-For S1:
+# For S1:
 
 Get array of split input of integers
 
