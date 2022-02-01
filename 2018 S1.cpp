@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 int main()
@@ -19,7 +20,7 @@ int main()
     for (int i = 1;i <= n;i++) {
         cin >> position;
         for (c = 1; c <= i; c++) {
-            if (position<villages[c]) {
+            if (position < villages[c]) {
                 for (int k = i; k > c; k--) {
                     villages[k] = villages[k - 1];
                 }
@@ -33,15 +34,19 @@ int main()
         cout << villages[i] << endl;
     }*/
 
-    float tempShort, shortest;
+    double tempShort, shortest;
     shortest = 2000000000;
     for (int i = 2; i <= n - 1; i++) {
-        tempShort = (villages[i + 1] - villages[i - 1])/2;
+        double next = villages[i + 1];
+        double prev = villages[i - 1];
+        tempShort = (next - prev) / 2;
+        //tempShort = (static_cast<float>(villages[i + 1]) - static_cast<float>(villages[i - 1]))/2;
         //cout << tempShort << endl;
         if (tempShort < shortest) {
             shortest = tempShort;
             //cout << shortest << endl;
         }
     }
-    cout << shortest;
+    cout << fixed << setprecision(1);
+    cout << shortest << endl;
 }
