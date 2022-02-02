@@ -27,23 +27,24 @@ def output(table):
             print(num, end= " ")
         print()
 
-def checkTable(table):
-    correct = True
+# def checkTable(table):
+#     correct = True
 
-    order = len(table[0])
+#     order = len(table[0])
 
-    for i in range(order-1):
-        if correct == False:
-            break
-        for j in range(order-1):
-            if i > order - 1 or j > order - 1:
-                break
+#     for i in range(order-1):
+#         if correct == False:
+#             break
+#         for j in range(order-1):
+#             if i > order - 1 or j > order - 1:
+#                 break
             
-            if table[i][j] > table[i][j+1] or table[i][j] > table[i+1][j]:
-                correct = False
-                break
+#             if table[i][j] > table[i][j+1] or table[i][j] > table[i+1][j]:
+#                 correct = False
+#                 break
             
-    return correct
+#     return correct
+# ^ inefficient dont use
         
     
 # table = [
