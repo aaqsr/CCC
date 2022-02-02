@@ -1,4 +1,6 @@
-# For S1:
+# Useful patterns we noticed
+
+## For S1:
 
 - Get array of split input of integers
 
