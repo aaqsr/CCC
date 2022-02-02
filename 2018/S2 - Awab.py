@@ -33,6 +33,8 @@ def checkTable(table):
     order = len(table[0])
 
     for i in range(order-1):
+        if correct == False:
+            break
         for j in range(order-1):
             if i > order - 1 or j > order - 1:
                 break
@@ -50,11 +52,10 @@ def checkTable(table):
 #     [7, 8, 9]
 # ]
 
+
 table = usrIn()
 
-rotatedTable = table
+while table[0][0] > table[0][1] or table[0][0] > table[1][0]:
+    table = rotate90(table)
 
-while checkTable(rotatedTable) != True:
-    rotatedTable = rotate90(table)
-
-output(rotatedTable)
+output(table)
