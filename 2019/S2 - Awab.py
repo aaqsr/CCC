@@ -39,7 +39,7 @@ def findingAB(num, currentPointer):
     if checkPrime(B) == True:
         return [A, B]
 
-    return [A, findingAB(num, A+1)]
+    return findingAB(num, A+1)
         
 
 numbers = usrIn()
