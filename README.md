@@ -27,3 +27,12 @@ list(map(int,input().split())) # Replace int with str for strings
 ```py 
 print( round(ans, 1) )
 ```
+
+- Find all permutations of characters in a string
+
+```py 
+import itertools
+s = 'ABC'
+nums = list(s)
+perms = list(itertools.permutations(nums)) # Recursion Tree
+```
