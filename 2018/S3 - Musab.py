@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def takeInput(n):
     grid = []
     for i in range(n):
