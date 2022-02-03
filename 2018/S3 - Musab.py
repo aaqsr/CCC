@@ -10,12 +10,14 @@ def takeInput(n):
 
 
 def breadSearch(frontier, fpointer, cost):
-    while fpointer < len(frontier):
-        temp1, temp2 = checkAdj(frontier[fpointer], cost[fpointer])
-        if len(temp1) != 0:
-            frontier.extend(temp1)
-            cost.extend(temp2)
-        fpointer += 1
+    a=ValidNode(frontier[fpointer])
+    if a[0]:
+        while fpointer < len(frontier):
+            temp1, temp2 = checkAdj(frontier[fpointer], cost[fpointer])
+            if len(temp1) != 0:
+                frontier.extend(temp1)
+                cost.extend(temp2)
+            fpointer += 1
 
 
 def checkAdj(coords, currCost):
@@ -124,6 +126,6 @@ grid, startCoords = takeInput(n)
 frontier = [startCoords]
 fpointer = 0
 cost = [0]
-allNodes = [frontier[0]]
+allNodes = []
 breadSearch(frontier, fpointer, cost)
 Display(n, m)
