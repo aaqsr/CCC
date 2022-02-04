@@ -36,3 +36,9 @@ s = 'ABC'
 nums = list(s)
 perms = list(itertools.permutations(nums)) # Recursion Tree
 ```
+
+- Remove duplicates from an array
+
+```py
+mylist = list(dict.fromkeys(mylist))
+```
