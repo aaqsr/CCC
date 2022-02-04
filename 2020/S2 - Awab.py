@@ -42,7 +42,7 @@ def expand(coords):
 
                 if len(numCoords[num]) > 1:
                     for val in numCoords[num]:
-                        expand(val)
+                        frontier.append(val)
                 else:
                     frontier.append([numCoords[num][0][0], numCoords[num][0][1]])
         return 0
@@ -61,12 +61,11 @@ def expand(coords):
 
 def explore():
     if len(frontier) != 0:
-        for val in frontier:
-            temp = expand(val)
-            frontier.pop(0)
-            if temp == 1:
-                print("yes")
-                return
+        temp = expand(frontier[0])
+        frontier.pop(0)
+        if temp == 1:
+            print("yes")
+            return
         explore()
     else:
         print("no")
