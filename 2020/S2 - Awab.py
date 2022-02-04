@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 M = int(input())
 N = int(input())
 grid = []
@@ -58,17 +60,18 @@ def expand(coords):
 
 # if len(frontier) == 0:
 #     print("no")
+flag = False
 
-def explore():
-    if len(frontier) != 0:
+while len(frontier) != 0:
+    if len(frontier) != 0: # i am too scared to touch this ik it's reduntant
         temp = expand(frontier[0])
         frontier.pop(0)
         if temp == 1:
-            print("yes")
-            return
-        explore()
-    else:
-        print("no")
-        return
+            flag = True
+            break
 
-explore()
+if flag:
+    print("yes")
+else:
+    print ("no")
+        
