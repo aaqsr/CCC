@@ -63,15 +63,13 @@ def expand(coords):
 flag = False
 
 while len(frontier) != 0:
-    if len(frontier) != 0: # i am too scared to touch this ik it's reduntant
-        temp = expand(frontier[0])
-        frontier.pop(0)
-        if temp == 1:
-            flag = True
-            break
+    temp = expand(frontier[0])
+    frontier.pop(0)
+    if temp == 1:
+        flag = True
+        break
 
 if flag:
     print("yes")
 else:
     print ("no")
-        
