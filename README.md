@@ -1,7 +1,5 @@
 # Useful patterns we noticed
 
-## For S1:
-
 - Get array of split input of integers
 
 ```python
@@ -41,4 +39,15 @@ perms = list(itertools.permutations(nums)) # Recursion Tree
 
 ```py
 mylist = list(dict.fromkeys(mylist))
+```
+
+# Regular Expression Common Uses
+```py
+import re
+```
+
+- Find all occurrences of a substring in a string
+
+```py
+re.findall(substring, string) # Substring can also be a pattern
 ```
