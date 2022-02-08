@@ -30,17 +30,19 @@ goal = grid[0][0]
 start = grid[M-1][N-1]
 
 frontier = [[M, N]]
-explored = [start]
+explored = {start: True}
 
 def expand(coords):
     num = int((coords[0]) * (coords[1]))
     if num == goal:
         return 1
     else:
-        if not (num in explored): 
+        try:
+            explored[num]
+        except:
             if num in numCoords:
                 
-                explored.append(num)
+                explored[num] = True
 
                 if len(numCoords[num]) > 1:
                     for val in numCoords[num]:

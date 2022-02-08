@@ -37,3 +37,4 @@
 .vscode/launch.json
 .vs
 *.dSYM
+.vscode/settings.json
