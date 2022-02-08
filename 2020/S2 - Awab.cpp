@@ -2,35 +2,34 @@
 #include <map>
 #include <vector>
 #include <sstream>
+#include <unordered_map>
 
 using namespace std;
 
-int main() {
-    int M = 0; // rows
-    cin >> M;
-    int N = 0; // columns
-    cin >> N;
+int main() 
+{
+    // int n{1};
+
+    // cin >> n;
+    // int test[n];
+
+    // for (int i = 0; i < 5; i++)
+    //     cin >> test[i];
+
+    // for (int i = 0; i < 10; i++)
+    //     cout << test[i];
+
+    // map<int, bool> fooMap{
+    //     {1, true},
+    //     {2, false}
+    // };
+
+    // int n{0};
+
+    // cin >> n;
+
+    // fooMap[n];
+
+    // unordered_map<
     
-
-    int grid[M][N];
-    // map<int, int[20][2]> numCoords; // arbitrary numbers, bump up the index 1 if issues
-
-    for (int i; i < M;)
-    {
-        string row = "";
-        cin >> row;
-        cout << row;
-        stringstream ssin(row);
-        int j = 0;
-        while (ssin.good() && j < N)
-        {
-            char digit = '0';
-            ssin >> digit;
-            grid[i][j] = int(digit);
-            ++j;
-        }
-        ++i;
-    }
-
-    cout << endl << grid[0][0];
 }
