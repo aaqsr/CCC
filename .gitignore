@@ -38,3 +38,12 @@
 .vs
 *.dSYM
 .vscode/settings.json
+
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+Debug
+*.ilk
+*pdb
