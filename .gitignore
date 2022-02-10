@@ -44,6 +44,6 @@
 *.vcxproj.filters
 *.vcxproj.user
 
-Debug
+Debug/
 *.ilk
 *pdb
