@@ -33,11 +33,9 @@
 
 # visual studio files
 
-.vscode/tasks.json
-.vscode/launch.json
 .vs
 *.dSYM
-.vscode/settings.json
+.vscode/
 
 *.sln
 *.vcxproj
@@ -47,3 +45,4 @@
 Debug/
 *.ilk
 *pdb
+
