@@ -55,3 +55,9 @@ re.findall(substring, string) # Substring can also be a pattern
 # useful stuff on C++ 
     - [vectors](https://www.cplusplus.com/reference/vector/vector/) are dynamic arrays
     - vectors are very efficient accessing its elements (just like arrays) and relatively efficient adding or removing elements from its end. For operations that involve inserting or removing elements at positions other than the end, they perform worse than the others, and have less consistent iterators and references than lists and forward_lists
+
+    - C++ WILL TURN OUTPUT TO SCI NOTATION IF TOO LARGE, USE 
+    
+    ```c++
+    cout << fixed << ans;
+    ```
