@@ -30,7 +30,7 @@ void expand(const map<int, vector<point>> &pointMap, queue<point> &frontier, set
         if (pointMap.count(nextPoint)) {
             vector<point> coords = pointMap.at(nextPoint); // wrap in throw / catch?
 
-            for(auto const& i : coords) 
+            for(auto const& i : coords)
             {
                 frontier.push(i);
             }
@@ -103,11 +103,11 @@ int main()
     // }
 
     // for (auto const& [key, val] : pointMap){
-    //     for(auto const& i : val) 
+    //     for(auto const& i : val)
     //     {
     //         cout << '{' << key << ':';
     //         cout << '[' << i.rowNum << ',' << i.colNum << ',' << i.val << ']' << '}';
-    //     }   
+    //     }
     // }
     // cout << start.val << " " << goal.val << endl;
     string output = (flag) ? "yes" : "no";
