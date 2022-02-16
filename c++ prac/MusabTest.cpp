@@ -11,9 +11,19 @@ int main(){
     int q;
     int k;
     int t;
-    int temp;
     a.push_back(2);
-    std::cout << a[0];
+    // std::cout << a[0];
+
+    std::vector<bool> booltest{0};
+    for (int i{0}; i < 5; i++) {
+      char temp;
+      std::cin >> temp;
+      booltest.push_back(bool(temp)); 
+    }
+    std::cout << std::endl;
+    for (const auto& x : booltest) {
+      std::cout << x;
+    }
     // for (int i=1; i <= n; i++){
     //     cin >> temp;
     //     a.push_back(temp);
@@ -22,6 +32,6 @@ int main(){
     //     cin >> k;
     //     cout << a[k] << a[t];
     // }
-    // cin >> k;   
+    // cin >> k;
     // return 0;
 }
