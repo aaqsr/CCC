@@ -45,6 +45,7 @@ int main() {
     }
     
     set<string> checkedNamesInX;  // has this name already been checked?
+    set<string> checkedNamesInY;  // has this name already been checked?
     for (const auto& group: groups) {
         for (const auto& name: group) {     // loops over the group
 
@@ -62,6 +63,26 @@ int main() {
                         }
                     }
                     if (isPersonXThere == false) {
+                        ans += 1;
+                    }
+                    }
+                }
+            }
+
+                        if (notWork.count(name) > 0) { // if name is in map
+                    for (int i{0}; i < int(notWork[name].size()); i++) { //loops over the names arr in map
+                    string personMustNotExist = notWork[name][i]; // person that must not be here
+                    checkedNamesInY.insert(name);
+
+                    if (checkedNamesInY.count(personMustNotExist) == 0) {  // if person has not been checked 
+                    bool isPersonYThere{false};
+                    for (int i{0}; i < 3; i++) {
+                        if (group[i] == personMustNotExist) {    // is person there?
+                            isPersonYThere = true;
+                            break;
+                        }
+                    }
+                    if (isPersonYThere == true) {
                         ans += 1;
                     }
                     }
