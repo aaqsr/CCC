@@ -1,1 +1,2 @@
 *.in linguist-vendored
+*.py linguist-vendored
