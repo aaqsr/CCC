@@ -1,2 +1,4 @@
 ﻿  S3 - Musab.cpp
+C:\Users\Musab\Desktop\CCC\2019\S3 - Musab\S3 - Musab\S3 - Musab.cpp(91,20): warning C4018: '<=': signed/unsigned mismatch
+C:\Users\Musab\Desktop\CCC\2019\S3 - Musab\S3 - Musab\S3 - Musab.cpp(92,58): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
   S3 - Musab.vcxproj -> C:\Users\Musab\Desktop\CCC\2019\S3 - Musab\Debug\S3 - Musab.exe
